@@ -10,7 +10,7 @@ function M.setup()
 				cmd = { "cql_lsp" },
 				filetypes = { "cqlang" },
 				root_dir = function(fname)
-  					return util.find_git_ancestor(fname) or util.path.dirname(fname)
+					return util.find_git_ancestor(fname) or util.path.dirname(fname)
 				end,
 				capabilities = require("blink.cmp").get_lsp_capabilities(),
 			},
