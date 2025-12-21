@@ -22,3 +22,6 @@ return {
   },
 }
 ```
+
+> [!TIP]
+> If you have any issues with the plugin, open issue on laguage server [repo](https://github.com/Akzestia/cqlls) </br>
