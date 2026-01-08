@@ -1,5 +1,6 @@
 local M = {}
 
+
 function M.setup()
   local parsers = require("nvim-treesitter.parsers")
   
