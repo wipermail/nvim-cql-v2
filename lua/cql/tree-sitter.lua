@@ -1,8 +1,11 @@
 local M = {}
 
 function M.setup()
-  local parser_configs =
-    require("nvim-treesitter.parsers").get_parser_configs()
+  local parsers = require("nvim-treesitter.parsers")
+
+  local parser_configs = parsers.get_parser_configs
+    and parsers.get_parser_configs()
+    or parsers
 
   parser_configs.cql = {
     install_info = {
