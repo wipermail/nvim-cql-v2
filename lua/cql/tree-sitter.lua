@@ -14,7 +14,7 @@ function M.setup()
  		tier = 1,
     filetype = "cqlang",
  	}
-vim.treesitter.language.register("cql", "cqlang")
+vim.treesitter.language.register("cql", "cql")
 end
 
 return M
